@@ -22,3 +22,11 @@ C:\Users\T450\Documents\ltudql1_2017_ck3_10\ltudql1_2017_ck3_10\DTO\obj\Debug\DT
 C:\Users\T450\Documents\ltudql1_2017_ck3_10\ltudql1_2017_ck3_10\DTO\obj\Debug\DTO.exe
 C:\Users\T450\Documents\ltudql1_2017_ck3_10\ltudql1_2017_ck3_10\DTO\obj\Debug\DTO.pdb
 C:\Users\T450\Documents\ltudql1_2017_ck3_10\ltudql1_2017_ck3_10\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\MR.PHU\AndroidStudioProjects\ltudql1_2017_ck3_10\DTO\bin\Debug\DTO.exe.config
+C:\Users\MR.PHU\AndroidStudioProjects\ltudql1_2017_ck3_10\DTO\bin\Debug\DTO.exe
+C:\Users\MR.PHU\AndroidStudioProjects\ltudql1_2017_ck3_10\DTO\bin\Debug\DTO.pdb
+C:\Users\MR.PHU\AndroidStudioProjects\ltudql1_2017_ck3_10\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\MR.PHU\AndroidStudioProjects\ltudql1_2017_ck3_10\DTO\obj\Debug\DTO.Properties.Resources.resources
+C:\Users\MR.PHU\AndroidStudioProjects\ltudql1_2017_ck3_10\DTO\obj\Debug\DTO.csproj.GenerateResource.cache
+C:\Users\MR.PHU\AndroidStudioProjects\ltudql1_2017_ck3_10\DTO\obj\Debug\DTO.exe
+C:\Users\MR.PHU\AndroidStudioProjects\ltudql1_2017_ck3_10\DTO\obj\Debug\DTO.pdb
