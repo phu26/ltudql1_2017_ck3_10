@@ -24,10 +24,6 @@ namespace DTO
             TB2 = tb2;
         }
 
-        public string MaCT1 { get => MaCT; set => MaCT = value; }
-        public string MaL1 { get => MaL; set => MaL = value; }
-        public int MaHS1 { get => MaHS; set => MaHS = value; }
-        public float TB11 { get => TB1; set => TB1 = value; }
-        public float TB21 { get => TB2; set => TB2 = value; }
+    
     }
 }
