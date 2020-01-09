@@ -14,3 +14,10 @@ D:\code\LTUDQL\DOAN\ltudql1_2017_ck3_10\DTO\obj\Debug\DTO.csproj.GenerateResourc
 D:\code\LTUDQL\DOAN\ltudql1_2017_ck3_10\DTO\obj\Debug\DTO.exe
 D:\code\LTUDQL\DOAN\ltudql1_2017_ck3_10\DTO\obj\Debug\DTO.pdb
 D:\source\ltudql1_2017_ck3_10\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\T450\Documents\ltudql1_2017_ck3_10\ltudql1_2017_ck3_10\DTO\bin\Debug\DTO.exe.config
+C:\Users\T450\Documents\ltudql1_2017_ck3_10\ltudql1_2017_ck3_10\DTO\bin\Debug\DTO.exe
+C:\Users\T450\Documents\ltudql1_2017_ck3_10\ltudql1_2017_ck3_10\DTO\bin\Debug\DTO.pdb
+C:\Users\T450\Documents\ltudql1_2017_ck3_10\ltudql1_2017_ck3_10\DTO\obj\Debug\DTO.Properties.Resources.resources
+C:\Users\T450\Documents\ltudql1_2017_ck3_10\ltudql1_2017_ck3_10\DTO\obj\Debug\DTO.csproj.GenerateResource.cache
+C:\Users\T450\Documents\ltudql1_2017_ck3_10\ltudql1_2017_ck3_10\DTO\obj\Debug\DTO.exe
+C:\Users\T450\Documents\ltudql1_2017_ck3_10\ltudql1_2017_ck3_10\DTO\obj\Debug\DTO.pdb

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLHS" Class="HocSinhDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-L34EHS5\SQLEXPRESS;Initial Catalog=QLHS;Integrated Security=True" SettingsObjectName="DAO.Properties.Settings" SettingsPropertyName="QLHSConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=PHUONGTRAN;Initial Catalog=QLHS;Integrated Security=True" SettingsObjectName="DAO.Properties.Settings" SettingsPropertyName="QLHSConnectionString1" Provider="System.Data.SqlClient" />
   <Table Name="dbo.BANGDIEM" Member="BANGDIEMs">
     <Type Name="BANGDIEM">
       <Column Name="MaBangDiem" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -12,6 +12,14 @@
       <Association Name="Hoc_sinh_BANGDIEM" Member="Hoc_sinh" ThisKey="MaHocSinh" OtherKey="ID" Type="Hoc_sinh" IsForeignKey="true" />
       <Association Name="HOCKI_BANGDIEM" Member="HOCKI" ThisKey="MaHocKi" OtherKey="MaHocKi" Type="HOCKI" IsForeignKey="true" />
       <Association Name="MONHOC_BANGDIEM" Member="MONHOC" ThisKey="MaMonHoc" OtherKey="MaMonHoc" Type="MONHOC" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Userr" Member="Userrs">
+    <Type Name="Userr">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="userName" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="passWord" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="permission" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </Type>
   </Table>
   <Table Name="dbo.BAOCAOTONGKETMON" Member="BAOCAOTONGKETMONs">
@@ -97,14 +105,6 @@
       <Association Name="MONHOC_BAOCAOTONGKETMON" Member="BAOCAOTONGKETMONs" ThisKey="MaMonHoc" OtherKey="MaMon" Type="BAOCAOTONGKETMON" />
     </Type>
   </Table>
-  <Table Name="dbo.Userr" Member="Userrs">
-    <Type Name="Userr">
-      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="userName" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
-      <Column Name="passWord" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="permission" Type="System.Int32" DbType="Int" CanBeNull="true" />
-    </Type>
-  </Table>
   <Table Name="dbo.THAMSO" Member="THAMSOs">
     <Type Name="THAMSO">
       <Column Name="TuoiToiThieu" Type="System.Int32" DbType="Int" CanBeNull="true" />
@@ -113,14 +113,118 @@
       <Column Name="DiemDatMon" Type="System.Double" DbType="Float" CanBeNull="true" />
     </Type>
   </Table>
-  <Function Name="dbo.AddHK" Method="AddHK">
-    <Parameter Name="mahk" Type="System.Int32" DbType="Int" />
-    <Parameter Name="tenhk" Type="System.String" DbType="VarChar(10)" />
+  <Function Name="dbo.addBCHK" Method="addBCHK">
+    <Parameter Name="MabcHK" Parameter="mabcHK" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="MaHK" Parameter="maHK" Type="System.Int32" DbType="Int" />
+    <Parameter Name="MaLop" Parameter="maLop" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="SL" Parameter="sL" Type="System.Int32" DbType="Int" />
+    <Parameter Name="TL" Parameter="tL" Type="System.Double" DbType="Float" />
     <Return Type="System.Int32" />
   </Function>
   <Function Name="dbo.XoaHS" Method="XoaHS">
     <Parameter Name="MaHS" Parameter="maHS" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.AddHK" Method="AddHK">
+    <Parameter Name="mahk" Type="System.Int32" DbType="Int" />
+    <Parameter Name="tenhk" Type="System.String" DbType="VarChar(10)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.AddMH" Method="AddMH">
+    <Parameter Name="mamh" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="tenmh" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.AddMHtoNH" Method="AddMHtoNH">
+    <Parameter Name="mabc" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="mahk" Type="System.Int32" DbType="Int" />
+    <Parameter Name="mamh" Type="System.String" DbType="VarChar(10)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.AddU" Method="AddU">
+    <Parameter Name="user" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="pass" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="per" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.bang" Method="bang">
+    <ElementType Name="bangResult">
+      <Column Name="MaChiTietDSLop" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="MaLop" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="MaHocSinh" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TBHocKi1" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TBHocKi2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MaMonHoc" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Diem15Phut" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Diem1Tiet" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DiemCuoiKi" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.DelU" Method="DelU">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.haveHK" Method="haveHK">
+    <Parameter Name="MaMH" Parameter="maMH" Type="System.String" DbType="VarChar(10)" />
+    <ElementType Name="haveHKResult">
+      <Column Name="MaMonHoc" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="TenMonHoc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MaBaoCaoMon" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="MaHocKi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaLop" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="MaMon" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="SoLuongDatMon" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TiLeDatMon" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.KTave" Method="KTave">
+    <Parameter Name="Malop" Parameter="malop" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="MaHK" Parameter="maHK" Type="System.Int32" DbType="Int" />
+    <ElementType Name="KTaveResult">
+      <Column Name="MaBangDiem" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="MaHocSinh" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaHocKi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaMonHoc" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Diem15Phut" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Diem1Tiet" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DiemCuoiKi" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MaChiTietDSLop" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="MaLop" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="MaHocSinh1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TBHocKi1" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TBHocKi2" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.ktclass" Method="ktclass">
+    <Parameter Name="Malop" Parameter="malop" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="MaHK" Parameter="maHK" Type="System.Int32" DbType="Int" />
+    <ElementType Name="ktclassResult">
+      <Column Name="MaHocSinh" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.mhtoclass" Method="mhtoclass">
+    <Parameter Name="MaLop" Parameter="maLop" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="Mamh" Parameter="mamh" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="maHK" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.noneHK" Method="noneHK">
+    <Parameter Name="MaMH" Parameter="maMH" Type="System.String" DbType="VarChar(10)" />
+    <ElementType Name="noneHKResult">
+      <Column Name="MaMonHoc" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="TenMonHoc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.setup" Method="setup">
+    <Parameter Name="malop" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="mamh" Type="System.String" DbType="VarChar(10)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.TONGKET" Method="TONGKET">
+    <ElementType Name="TONGKETResult">
+      <Column Name="MaHocKi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaLop" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </ElementType>
   </Function>
   <Function Name="dbo.TracuuhocsinhKL" Method="TracuuhocsinhKL">
     <Parameter Name="MaK" Parameter="maK" Type="System.String" DbType="VarChar(10)" />
@@ -150,6 +254,14 @@
       <Column Name="TBHocKi2" Type="System.Double" DbType="Float" CanBeNull="true" />
     </ElementType>
   </Function>
+  <Function Name="dbo.updateD" Method="updateD">
+    <Parameter Name="MaHS" Parameter="maHS" Type="System.Int32" DbType="Int" />
+    <Parameter Name="MaMH" Parameter="maMH" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="p15" Type="System.Double" DbType="Float" />
+    <Parameter Name="t1" Type="System.Double" DbType="Float" />
+    <Parameter Name="ck" Type="System.Double" DbType="Float" />
+    <Return Type="System.Int32" />
+  </Function>
   <Function Name="dbo.updateHS" Method="updateHS">
     <Parameter Name="TenL" Parameter="tenL" Type="System.String" DbType="VarChar(10)" />
     <Parameter Name="MaHS" Parameter="maHS" Type="System.Int32" DbType="Int" />
@@ -160,57 +272,12 @@
     <Parameter Name="sex" Type="System.String" DbType="NChar(10)" />
     <Return Type="System.Int32" />
   </Function>
-  <Function Name="dbo.AddMH" Method="AddMH">
-    <Parameter Name="mamh" Type="System.String" DbType="VarChar(10)" />
-    <Parameter Name="tenmh" Type="System.String" DbType="NVarChar(50)" />
+  <Function Name="dbo.UpdateQD" Method="UpdateQD">
+    <Parameter Name="tt" Type="System.Int32" DbType="Int" />
+    <Parameter Name="td" Type="System.Int32" DbType="Int" />
+    <Parameter Name="sstd" Type="System.Int32" DbType="Int" />
+    <Parameter Name="diemdat" Type="System.Double" DbType="Float" />
     <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.noneHK" Method="noneHK">
-    <Parameter Name="MaMH" Parameter="maMH" Type="System.String" DbType="VarChar(10)" />
-    <ElementType Name="noneHKResult">
-      <Column Name="MaMonHoc" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="TenMonHoc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.haveHK" Method="haveHK">
-    <Parameter Name="MaMH" Parameter="maMH" Type="System.String" DbType="VarChar(10)" />
-    <ElementType Name="haveHKResult">
-      <Column Name="MaMonHoc" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="TenMonHoc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="MaBaoCaoMon" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="MaHocKi" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="MaLop" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
-      <Column Name="MaMon" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
-      <Column Name="SoLuongDatMon" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="TiLeDatMon" Type="System.Double" DbType="Float" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.mhtoclass" Method="mhtoclass">
-    <Parameter Name="MaLop" Parameter="maLop" Type="System.String" DbType="VarChar(10)" />
-    <Parameter Name="Mamh" Parameter="mamh" Type="System.String" DbType="VarChar(10)" />
-    <Parameter Name="maHK" Type="System.Int32" DbType="Int" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.updateD" Method="updateD">
-    <Parameter Name="MaHS" Parameter="maHS" Type="System.Int32" DbType="Int" />
-    <Parameter Name="MaMH" Parameter="maMH" Type="System.String" DbType="VarChar(10)" />
-    <Parameter Name="p15" Type="System.Double" DbType="Float" />
-    <Parameter Name="t1" Type="System.Double" DbType="Float" />
-    <Parameter Name="ck" Type="System.Double" DbType="Float" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.bang" Method="bang">
-    <ElementType Name="bangResult">
-      <Column Name="MaChiTietDSLop" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="MaLop" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="MaHocSinh" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="TBHocKi1" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="TBHocKi2" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="MaMonHoc" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
-      <Column Name="Diem15Phut" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="Diem1Tiet" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="DiemCuoiKi" Type="System.Double" DbType="Float" CanBeNull="true" />
-    </ElementType>
   </Function>
   <Function Name="dbo.updateSL" Method="updateSL">
     <Parameter Name="malop" Type="System.String" DbType="VarChar(10)" />
@@ -223,77 +290,10 @@
     <Parameter Name="tl" Type="System.Double" DbType="Float" />
     <Return Type="System.Int32" />
   </Function>
-  <Function Name="dbo.AddMHtoNH" Method="AddMHtoNH">
-    <Parameter Name="mabc" Type="System.String" DbType="VarChar(10)" />
-    <Parameter Name="mahk" Type="System.Int32" DbType="Int" />
-    <Parameter Name="mamh" Type="System.String" DbType="VarChar(10)" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.setup" Method="setup">
-    <Parameter Name="malop" Type="System.String" DbType="VarChar(10)" />
-    <Parameter Name="mamh" Type="System.String" DbType="VarChar(10)" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.KTave" Method="KTave">
-    <Parameter Name="Malop" Parameter="malop" Type="System.String" DbType="VarChar(10)" />
-    <Parameter Name="MaHK" Parameter="maHK" Type="System.Int32" DbType="Int" />
-    <ElementType Name="KTaveResult">
-      <Column Name="MaBangDiem" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="MaHocSinh" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="MaHocKi" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="MaMonHoc" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
-      <Column Name="Diem15Phut" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="Diem1Tiet" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="DiemCuoiKi" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="MaChiTietDSLop" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="MaLop" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="MaHocSinh1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="TBHocKi1" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="TBHocKi2" Type="System.Double" DbType="Float" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.ktclass" Method="ktclass">
-    <Parameter Name="Malop" Parameter="malop" Type="System.String" DbType="VarChar(10)" />
-    <Parameter Name="MaHK" Parameter="maHK" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ktclassResult">
-      <Column Name="MaHocSinh" Type="System.Int32" DbType="Int" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.addBCHK" Method="addBCHK">
-    <Parameter Name="MabcHK" Parameter="mabcHK" Type="System.String" DbType="VarChar(10)" />
-    <Parameter Name="MaHK" Parameter="maHK" Type="System.Int32" DbType="Int" />
-    <Parameter Name="MaLop" Parameter="maLop" Type="System.String" DbType="VarChar(10)" />
-    <Parameter Name="SL" Parameter="sL" Type="System.Int32" DbType="Int" />
-    <Parameter Name="TL" Parameter="tL" Type="System.Double" DbType="Float" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.TONGKET" Method="TONGKET">
-    <ElementType Name="TONGKETResult">
-      <Column Name="MaHocKi" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="MaLop" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.DelU" Method="DelU">
-    <Parameter Name="id" Type="System.Int32" DbType="Int" />
-    <Return Type="System.Int32" />
-  </Function>
   <Function Name="dbo.UpdateU" Method="UpdateU">
     <Parameter Name="id" Type="System.Int32" DbType="Int" />
     <Parameter Name="pass" Type="System.String" DbType="VarChar(20)" />
     <Parameter Name="per" Type="System.Int32" DbType="Int" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.AddU" Method="AddU">
-    <Parameter Name="user" Type="System.String" DbType="VarChar(10)" />
-    <Parameter Name="pass" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="per" Type="System.Int32" DbType="Int" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.UpdateQD" Method="UpdateQD">
-    <Parameter Name="tt" Type="System.Int32" DbType="Int" />
-    <Parameter Name="td" Type="System.Int32" DbType="Int" />
-    <Parameter Name="sstd" Type="System.Int32" DbType="Int" />
-    <Parameter Name="diemdat" Type="System.Double" DbType="Float" />
     <Return Type="System.Int32" />
   </Function>
 </Database>

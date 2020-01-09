@@ -22,3 +22,15 @@ D:\code\LTUDQL\DOAN\ltudql1_2017_ck3_10\DAO\obj\Debug\DAO.csproj.GenerateResourc
 D:\code\LTUDQL\DOAN\ltudql1_2017_ck3_10\DAO\obj\Debug\DAO.csproj.CopyComplete
 D:\code\LTUDQL\DOAN\ltudql1_2017_ck3_10\DAO\obj\Debug\DAO.exe
 D:\code\LTUDQL\DOAN\ltudql1_2017_ck3_10\DAO\obj\Debug\DAO.pdb
+C:\Users\T450\Documents\ltudql1_2017_ck3_10\ltudql1_2017_ck3_10\DAO\bin\Debug\DAO.exe.config
+C:\Users\T450\Documents\ltudql1_2017_ck3_10\ltudql1_2017_ck3_10\DAO\bin\Debug\DAO.exe
+C:\Users\T450\Documents\ltudql1_2017_ck3_10\ltudql1_2017_ck3_10\DAO\bin\Debug\DAO.pdb
+C:\Users\T450\Documents\ltudql1_2017_ck3_10\ltudql1_2017_ck3_10\DAO\bin\Debug\DTO.exe
+C:\Users\T450\Documents\ltudql1_2017_ck3_10\ltudql1_2017_ck3_10\DAO\bin\Debug\DTO.pdb
+C:\Users\T450\Documents\ltudql1_2017_ck3_10\ltudql1_2017_ck3_10\DAO\bin\Debug\DTO.exe.config
+C:\Users\T450\Documents\ltudql1_2017_ck3_10\ltudql1_2017_ck3_10\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+C:\Users\T450\Documents\ltudql1_2017_ck3_10\ltudql1_2017_ck3_10\DAO\obj\Debug\DAO.Properties.Resources.resources
+C:\Users\T450\Documents\ltudql1_2017_ck3_10\ltudql1_2017_ck3_10\DAO\obj\Debug\DAO.csproj.GenerateResource.cache
+C:\Users\T450\Documents\ltudql1_2017_ck3_10\ltudql1_2017_ck3_10\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\T450\Documents\ltudql1_2017_ck3_10\ltudql1_2017_ck3_10\DAO\obj\Debug\DAO.exe
+C:\Users\T450\Documents\ltudql1_2017_ck3_10\ltudql1_2017_ck3_10\DAO\obj\Debug\DAO.pdb
