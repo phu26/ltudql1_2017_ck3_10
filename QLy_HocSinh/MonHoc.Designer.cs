@@ -32,17 +32,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.a = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.dsmhgrid = new System.Windows.Forms.DataGridView();
-            this.MaMH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenMH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hocki = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NamH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hockicomboo = new System.Windows.Forms.ComboBox();
-            this.namhoccombo = new System.Windows.Forms.ComboBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.yearcombo = new System.Windows.Forms.ComboBox();
             this.button5 = new System.Windows.Forms.Button();
@@ -53,20 +42,14 @@
             this.button4 = new System.Windows.Forms.Button();
             this.hk2bt = new System.Windows.Forms.Button();
             this.hk1bt = new System.Windows.Forms.Button();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.namhoc = new System.Windows.Forms.TextBox();
             this.hkcombo = new System.Windows.Forms.ComboBox();
             this.checkNH1 = new QLy_HocSinh.MonHoc.CheckNH();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.dslopcbox = new System.Windows.Forms.ComboBox();
             this.a.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dsmhgrid)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mhnothkgrid)).BeginInit();
@@ -94,7 +77,6 @@
             // 
             // a
             // 
-            this.a.Controls.Add(this.tabPage1);
             this.a.Controls.Add(this.tabPage2);
             this.a.Controls.Add(this.tabPage3);
             this.a.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -103,102 +85,6 @@
             this.a.SelectedIndex = 0;
             this.a.Size = new System.Drawing.Size(800, 450);
             this.a.TabIndex = 4;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.label6);
-            this.tabPage1.Controls.Add(this.dslopcbox);
-            this.tabPage1.Controls.Add(this.button2);
-            this.tabPage1.Controls.Add(this.label5);
-            this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.panel2);
-            this.tabPage1.Controls.Add(this.hockicomboo);
-            this.tabPage1.Controls.Add(this.namhoccombo);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(792, 424);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Chi Tiết Môn Học Theo Học Kì";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            this.label5.Location = new System.Drawing.Point(188, 108);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Tên Học Kì";
-            // 
-            // label4
-            // 
-            this.label4.Location = new System.Drawing.Point(188, 47);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Mã Học Kì";
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.dsmhgrid);
-            this.panel2.Location = new System.Drawing.Point(152, 198);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(442, 218);
-            this.panel2.TabIndex = 7;
-            // 
-            // dsmhgrid
-            // 
-            this.dsmhgrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dsmhgrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MaMH,
-            this.TenMH,
-            this.hocki,
-            this.NamH});
-            this.dsmhgrid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dsmhgrid.Location = new System.Drawing.Point(0, 0);
-            this.dsmhgrid.Name = "dsmhgrid";
-            this.dsmhgrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dsmhgrid.Size = new System.Drawing.Size(442, 218);
-            this.dsmhgrid.TabIndex = 0;
-            this.dsmhgrid.SelectionChanged += new System.EventHandler(this.dsmhgrid_SelectionChanged);
-            // 
-            // MaMH
-            // 
-            this.MaMH.HeaderText = "Mã Môn Học";
-            this.MaMH.Name = "MaMH";
-            // 
-            // TenMH
-            // 
-            this.TenMH.HeaderText = "Tên Môn Học";
-            this.TenMH.Name = "TenMH";
-            // 
-            // hocki
-            // 
-            this.hocki.HeaderText = "Học Kì";
-            this.hocki.Name = "hocki";
-            // 
-            // NamH
-            // 
-            this.NamH.HeaderText = "Năm Học";
-            this.NamH.Name = "NamH";
-            // 
-            // hockicomboo
-            // 
-            this.hockicomboo.FormattingEnabled = true;
-            this.hockicomboo.Location = new System.Drawing.Point(256, 105);
-            this.hockicomboo.Name = "hockicomboo";
-            this.hockicomboo.Size = new System.Drawing.Size(182, 21);
-            this.hockicomboo.TabIndex = 4;
-            this.hockicomboo.SelectedIndexChanged += new System.EventHandler(this.hkcombo_SelectedIndexChanged);
-            // 
-            // namhoccombo
-            // 
-            this.namhoccombo.FormattingEnabled = true;
-            this.namhoccombo.Location = new System.Drawing.Point(256, 44);
-            this.namhoccombo.Name = "namhoccombo";
-            this.namhoccombo.Size = new System.Drawing.Size(182, 21);
-            this.namhoccombo.TabIndex = 3;
-            this.namhoccombo.SelectedIndexChanged += new System.EventHandler(this.namhoccombo_SelectedIndexChanged);
             // 
             // tabPage2
             // 
@@ -297,6 +183,16 @@
             this.hk1bt.UseVisualStyleBackColor = true;
             this.hk1bt.Click += new System.EventHandler(this.hk1bt_Click);
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(792, 424);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Danh sách môn học theo lớp";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.a);
@@ -351,47 +247,6 @@
             this.checkNH1.ErrorIcon = ((System.Drawing.Icon)(resources.GetObject("checkNH1.ErrorIcon")));
             this.checkNH1.ErrorMessage = null;
             // 
-            // tabPage3
-            // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(792, 424);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Danh sách môn học theo lớp";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(299, 169);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 23);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Thêm Vào Lớp";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.White;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(232, 9);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(95, 13);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Danh Sách Lớp";
-            // 
-            // dslopcbox
-            // 
-            this.dslopcbox.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.dslopcbox.FormattingEnabled = true;
-            this.dslopcbox.Location = new System.Drawing.Point(364, 6);
-            this.dslopcbox.Name = "dslopcbox";
-            this.dslopcbox.Size = new System.Drawing.Size(86, 21);
-            this.dslopcbox.TabIndex = 11;
-            // 
             // MonHoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -409,10 +264,6 @@
             this.Text = "MonHoc";
             this.Load += new System.EventHandler(this.MonHoc_Load);
             this.a.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dsmhgrid)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.mhnothkgrid)).EndInit();
@@ -427,10 +278,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabControl a;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ComboBox hockicomboo;
-        private System.Windows.Forms.ComboBox namhoccombo;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button4;
@@ -443,20 +290,10 @@
         private System.Windows.Forms.ComboBox hkcombo;
         private CheckNH checkNH1;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridView dsmhgrid;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaMH;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenMH;
-        private System.Windows.Forms.DataGridViewTextBoxColumn hocki;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NamH;
         private System.Windows.Forms.DataGridView mhnothkgrid;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ma;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ten;
         private System.Windows.Forms.ComboBox yearcombo;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox dslopcbox;
     }
 }
