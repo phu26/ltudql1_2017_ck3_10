@@ -57,8 +57,6 @@ namespace QLy_HocSinh
                 txtusername.Text = row.Cells[1].Value.ToString();
                 txtpass.Text = row.Cells[2].Value.ToString();
                 txtPer.Text = row.Cells[3].Value.ToString();
-                txtpass.Text = row.Cells[4].Value.ToString();
-                txtPer.Text = row.Cells[5].Value.ToString();
             }
         }
 
