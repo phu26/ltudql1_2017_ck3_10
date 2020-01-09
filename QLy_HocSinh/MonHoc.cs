@@ -483,5 +483,31 @@ namespace QLy_HocSinh
                 }
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+            DataGridViewRow row = dsmhgrid.SelectedRows[0];
+            string mh = row.Cells[0].Value.ToString();
+            
+
+
+
+            DialogResult result = MessageBox.Show("Đồng Ý Sẽ Không Khôi Phục Được", "Xóa Môn Học", MessageBoxButtons.YesNo, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button2);
+            switch (result)
+            {
+                case DialogResult.Abort:
+                    break;
+                case DialogResult.Yes:
+                    {
+                        HSB.DelMH(mh);
+                        MessageBox.Show("Successful");
+                        MonHoc_Load(sender, e);
+                        break;
+                    }
+                default:
+                    break;
+            }
+        }
     }
 }

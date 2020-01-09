@@ -33,6 +33,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.a = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label6 = new System.Windows.Forms.Label();
+            this.dslopcbox = new System.Windows.Forms.ComboBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -53,16 +56,14 @@
             this.button4 = new System.Windows.Forms.Button();
             this.hk2bt = new System.Windows.Forms.Button();
             this.hk1bt = new System.Windows.Forms.Button();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.namhoc = new System.Windows.Forms.TextBox();
             this.hkcombo = new System.Windows.Forms.ComboBox();
             this.checkNH1 = new QLy_HocSinh.MonHoc.CheckNH();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.dslopcbox = new System.Windows.Forms.ComboBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.a.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -106,6 +107,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.button3);
             this.tabPage1.Controls.Add(this.label6);
             this.tabPage1.Controls.Add(this.dslopcbox);
             this.tabPage1.Controls.Add(this.button2);
@@ -121,6 +123,37 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Chi Tiết Môn Học Theo Học Kì";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label6.Location = new System.Drawing.Point(232, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(95, 13);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Danh Sách Lớp";
+            // 
+            // dslopcbox
+            // 
+            this.dslopcbox.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.dslopcbox.FormattingEnabled = true;
+            this.dslopcbox.Location = new System.Drawing.Point(364, 6);
+            this.dslopcbox.Name = "dslopcbox";
+            this.dslopcbox.Size = new System.Drawing.Size(86, 21);
+            this.dslopcbox.TabIndex = 11;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(299, 169);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(100, 23);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "Thêm Vào Lớp";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label5
             // 
@@ -297,6 +330,16 @@
             this.hk1bt.UseVisualStyleBackColor = true;
             this.hk1bt.Click += new System.EventHandler(this.hk1bt_Click);
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(792, 424);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Danh sách môn học theo lớp";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.a);
@@ -351,46 +394,15 @@
             this.checkNH1.ErrorIcon = ((System.Drawing.Icon)(resources.GetObject("checkNH1.ErrorIcon")));
             this.checkNH1.ErrorMessage = null;
             // 
-            // tabPage3
+            // button3
             // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(792, 424);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Danh sách môn học theo lớp";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(299, 169);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 23);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Thêm Vào Lớp";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.White;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(232, 9);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(95, 13);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Danh Sách Lớp";
-            // 
-            // dslopcbox
-            // 
-            this.dslopcbox.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.dslopcbox.FormattingEnabled = true;
-            this.dslopcbox.Location = new System.Drawing.Point(364, 6);
-            this.dslopcbox.Name = "dslopcbox";
-            this.dslopcbox.Size = new System.Drawing.Size(86, 21);
-            this.dslopcbox.TabIndex = 11;
+            this.button3.Location = new System.Drawing.Point(625, 289);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(100, 23);
+            this.button3.TabIndex = 13;
+            this.button3.Text = "Xóa Môn Học";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // MonHoc
             // 
@@ -458,5 +470,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox dslopcbox;
+        private System.Windows.Forms.Button button3;
     }
 }

@@ -169,6 +169,10 @@ namespace BUS
         {
             HS.UpdateQD(tt,td,ss,d);
         }
+        public void DelMH(string MaMH)
+        {
+            HS.DeleteMH(MaMH);
+        }
     }
 
 }

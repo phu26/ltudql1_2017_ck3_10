@@ -743,6 +743,11 @@ namespace DAO
             
             UsserrDTO.u = new UsserrDTO(0,"","", 0);
         }
+        public void DeleteMH(string MaMH)
+        {
+            HocSinhDBDataContext hdb = new HocSinhDBDataContext();
+            hdb.XoaMH(MaMH);
+        }
 
     }
 }
