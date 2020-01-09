@@ -732,6 +732,7 @@ namespace QLy_HocSinh
                         HSB.DelKL(s.MaK1);
                         HSB.Load();
                         HSB.loadBCM();
+                        HSB.Loadkl();
                         MessageBox.Show("successful");
                         break;
                     }
@@ -759,6 +760,7 @@ namespace QLy_HocSinh
                     HSB.DelClass(s.MaL1);
                     HSB.Load();
                     HSB.loadBCM();
+                    HSB.Loadkl();
                     MessageBox.Show("successful");
                     break;
                 }
