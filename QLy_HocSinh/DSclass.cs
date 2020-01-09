@@ -28,7 +28,11 @@ namespace QLy_HocSinh
             if (dshsgrid.SelectedRows.Count <0)
             {
                 if(UsserrDTO.u.Per ==3)
-                button1.Visible = false;
+                {
+                    button1.Visible = false;
+                  
+                }
+               
             }
             List<string> kl = new List<string>();
             foreach (var s in ClassDTO.khoilop)
@@ -54,7 +58,8 @@ namespace QLy_HocSinh
                 button2.Visible = false;
                 addsubjecttohs.Visible = false;
                 updateD.Visible = false;
-
+                button3.Visible = false;
+                button4.Visible = false;
             }
         }
 

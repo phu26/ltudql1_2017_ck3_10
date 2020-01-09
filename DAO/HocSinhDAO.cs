@@ -748,6 +748,21 @@ namespace DAO
             HocSinhDBDataContext hdb = new HocSinhDBDataContext();
             hdb.XoaMH(MaMH);
         }
+        public void DeleteKL(string MaKL)
+        {
+            HocSinhDBDataContext hdb = new HocSinhDBDataContext();
+            hdb.XoaKL(MaKL);
+        }
+        public void DeleteClass(string MaLop)
+        {
+            HocSinhDBDataContext hdb = new HocSinhDBDataContext();
+            hdb.XoaLH(MaLop);
+        }
+        public void DeleteBD(int MaHS)
+        {
+            HocSinhDBDataContext hdb = new HocSinhDBDataContext();
+            hdb.XoaBD(MaHS);
+        }
 
     }
 }
