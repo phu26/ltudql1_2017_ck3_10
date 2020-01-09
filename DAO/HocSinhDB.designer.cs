@@ -60,7 +60,7 @@ namespace DAO
     #endregion
 		
 		public HocSinhDBDataContext() : 
-				base(global::DAO.Properties.Settings.Default.QLHSConnectionString1, mappingSource)
+				base(global::DAO.Properties.Settings.Default.QLHSConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
@@ -335,6 +335,34 @@ namespace DAO
 		public int UpdateU([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> id, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(20)")] string pass, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> per)
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id, pass, per);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.XoaMH")]
+		public int XoaMH([global::System.Data.Linq.Mapping.ParameterAttribute(Name="MaMon", DbType="VarChar(10)")] string maMon)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), maMon);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.XoaLH")]
+		public int XoaLH([global::System.Data.Linq.Mapping.ParameterAttribute(Name="MaLop", DbType="VarChar(10)")] string maLop)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), maLop);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.XoaKL")]
+		public int XoaKL([global::System.Data.Linq.Mapping.ParameterAttribute(Name="MaKL", DbType="VarChar(10)")] string maKL)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), maKL);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.XoaBD")]
+		public int XoaBD([global::System.Data.Linq.Mapping.ParameterAttribute(Name="MaHS", DbType="Int")] System.Nullable<int> maHS)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), maHS);
 			return ((int)(result.ReturnValue));
 		}
 	}

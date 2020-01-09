@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLHS" Class="HocSinhDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=PHUONGTRAN;Initial Catalog=QLHS;Integrated Security=True" SettingsObjectName="DAO.Properties.Settings" SettingsPropertyName="QLHSConnectionString1" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-L34EHS5\SQLEXPRESS;Initial Catalog=QLHS;Integrated Security=True" SettingsObjectName="DAO.Properties.Settings" SettingsPropertyName="QLHSConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.BANGDIEM" Member="BANGDIEMs">
     <Type Name="BANGDIEM">
       <Column Name="MaBangDiem" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -294,6 +294,22 @@
     <Parameter Name="id" Type="System.Int32" DbType="Int" />
     <Parameter Name="pass" Type="System.String" DbType="VarChar(20)" />
     <Parameter Name="per" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.XoaMH" Method="XoaMH">
+    <Parameter Name="MaMon" Parameter="maMon" Type="System.String" DbType="VarChar(10)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.XoaLH" Method="XoaLH">
+    <Parameter Name="MaLop" Parameter="maLop" Type="System.String" DbType="VarChar(10)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.XoaKL" Method="XoaKL">
+    <Parameter Name="MaKL" Parameter="maKL" Type="System.String" DbType="VarChar(10)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.XoaBD" Method="XoaBD">
+    <Parameter Name="MaHS" Parameter="maHS" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
   </Function>
 </Database>
