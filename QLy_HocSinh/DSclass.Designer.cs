@@ -93,6 +93,8 @@
             this.txt15p = new System.Windows.Forms.TextBox();
             this.txt1t = new System.Windows.Forms.TextBox();
             this.txtck = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dshsgrid)).BeginInit();
             this.panel2.SuspendLayout();
@@ -638,11 +640,31 @@
             this.txtck.Size = new System.Drawing.Size(67, 20);
             this.txtck.TabIndex = 33;
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(54, 31);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(95, 23);
+            this.button3.TabIndex = 34;
+            this.button3.Text = "Xóa Lớp";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(54, 7);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(95, 23);
+            this.button4.TabIndex = 35;
+            this.button4.Text = "Xóa Khối Lớp";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
             // DSclass
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(820, 450);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.txtck);
             this.Controls.Add(this.txt1t);
             this.Controls.Add(this.txt15p);
@@ -759,5 +781,7 @@
         private System.Windows.Forms.TextBox txt15p;
         private System.Windows.Forms.TextBox txt1t;
         private System.Windows.Forms.TextBox txtck;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }
