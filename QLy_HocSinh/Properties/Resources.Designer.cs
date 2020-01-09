@@ -83,6 +83,16 @@ namespace QLy_HocSinh.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap equipo_escuela_sobre_fondo_azul_23_2147656034 {
+            get {
+                object obj = ResourceManager.GetObject("equipo-escuela-sobre-fondo-azul_23-2147656034", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Light_blue_tech_background_vector_05 {
             get {
                 object obj = ResourceManager.GetObject("Light-blue-tech-background-vector-05", resourceCulture);
@@ -106,6 +116,16 @@ namespace QLy_HocSinh.Properties {
         internal static System.Drawing.Bitmap pngtree_vector_add_user_icon_png_image_313043 {
             get {
                 object obj = ResourceManager.GetObject("pngtree-vector-add-user-icon-png-image_313043", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap school_stationery_isolated_blue_background_24837_182 {
+            get {
+                object obj = ResourceManager.GetObject("school-stationery-isolated-blue-background_24837-182", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

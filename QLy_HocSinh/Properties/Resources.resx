@@ -118,22 +118,28 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="1080776-widescreen-light-blue-backgrounds-2560x1600" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1080776-widescreen-light-blue-backgrounds-2560x1600.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="212751248e6f6591846481281fe045dc" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\212751248e6f6591846481281fe045dc.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pngtree-vector-add-user-icon-png-image_313043" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pngtree-vector-add-user-icon-png-image_313043.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Light-blue-tech-background-vector-05" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Light-blue-tech-background-vector-05.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pngtree-blue-learning-goods-office-background-image_2341" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pngtree-blue-learning-goods-office-background-image_2341.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="school-stationery-isolated-blue-background_24837-182" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\school-stationery-isolated-blue-background_24837-182.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="212751248e6f6591846481281fe045dc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\212751248e6f6591846481281fe045dc.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1080776-widescreen-light-blue-backgrounds-2560x1600" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1080776-widescreen-light-blue-backgrounds-2560x1600.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="wall-wallpaper-concrete-colored-painted-textured-concept_53876-31799" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wall-wallpaper-concrete-colored-painted-textured-concept_53876-31799.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pngtree-vector-add-user-icon-png-image_313043" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngtree-vector-add-user-icon-png-image_313043.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="equipo-escuela-sobre-fondo-azul_23-2147656034" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\equipo-escuela-sobre-fondo-azul_23-2147656034.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

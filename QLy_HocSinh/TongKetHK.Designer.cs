@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.TKHKgrid = new System.Windows.Forms.DataGridView();
+            this.MHK = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ML = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SLDHK = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TLDHK = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.namhoccombo = new System.Windows.Forms.ComboBox();
             this.HKcombo = new System.Windows.Forms.ComboBox();
             this.hkradio = new System.Windows.Forms.RadioButton();
@@ -37,10 +41,6 @@
             this.kLcombo = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.classcombo = new System.Windows.Forms.ComboBox();
-            this.MHK = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ML = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SLDHK = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TLDHK = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.TKHKgrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,11 +52,30 @@
             this.ML,
             this.SLDHK,
             this.TLDHK});
-            this.TKHKgrid.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.TKHKgrid.Location = new System.Drawing.Point(0, 206);
+            this.TKHKgrid.Location = new System.Drawing.Point(161, 206);
             this.TKHKgrid.Name = "TKHKgrid";
-            this.TKHKgrid.Size = new System.Drawing.Size(800, 244);
+            this.TKHKgrid.Size = new System.Drawing.Size(441, 244);
             this.TKHKgrid.TabIndex = 0;
+            // 
+            // MHK
+            // 
+            this.MHK.HeaderText = "Mã học kì ";
+            this.MHK.Name = "MHK";
+            // 
+            // ML
+            // 
+            this.ML.HeaderText = "Mã Lớp";
+            this.ML.Name = "ML";
+            // 
+            // SLDHK
+            // 
+            this.SLDHK.HeaderText = "Số Lượng Đạt";
+            this.SLDHK.Name = "SLDHK";
+            // 
+            // TLDHK
+            // 
+            this.TLDHK.HeaderText = "Tỉ Lệ Đạt";
+            this.TLDHK.Name = "TLDHK";
             // 
             // namhoccombo
             // 
@@ -135,26 +154,6 @@
             this.classcombo.Size = new System.Drawing.Size(261, 21);
             this.classcombo.TabIndex = 22;
             this.classcombo.SelectedIndexChanged += new System.EventHandler(this.classcombo_SelectedIndexChanged);
-            // 
-            // MHK
-            // 
-            this.MHK.HeaderText = "Mã học kì ";
-            this.MHK.Name = "MHK";
-            // 
-            // ML
-            // 
-            this.ML.HeaderText = "Mã Lớp";
-            this.ML.Name = "ML";
-            // 
-            // SLDHK
-            // 
-            this.SLDHK.HeaderText = "Số Lượng Đạt";
-            this.SLDHK.Name = "SLDHK";
-            // 
-            // TLDHK
-            // 
-            this.TLDHK.HeaderText = "Tỉ Lệ Đạt";
-            this.TLDHK.Name = "TLDHK";
             // 
             // TongKetHK
             // 

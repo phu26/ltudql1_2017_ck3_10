@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.DsUsergrid = new System.Windows.Forms.DataGridView();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.usn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Password = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Permission = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UpdatePer = new System.Windows.Forms.Button();
             this.addUser = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -40,10 +44,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.DelUser = new System.Windows.Forms.Button();
             this.txtid = new System.Windows.Forms.TextBox();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.usn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Password = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Permission = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DsUsergrid)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -59,9 +59,30 @@
             this.Permission});
             this.DsUsergrid.Location = new System.Drawing.Point(230, 122);
             this.DsUsergrid.Name = "DsUsergrid";
+            this.DsUsergrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DsUsergrid.Size = new System.Drawing.Size(346, 221);
             this.DsUsergrid.TabIndex = 0;
             this.DsUsergrid.SelectionChanged += new System.EventHandler(this.DsUsergrid_SelectionChanged);
+            // 
+            // id
+            // 
+            this.id.HeaderText = "Id";
+            this.id.Name = "id";
+            // 
+            // usn
+            // 
+            this.usn.HeaderText = "Username";
+            this.usn.Name = "usn";
+            // 
+            // Password
+            // 
+            this.Password.HeaderText = "Password";
+            this.Password.Name = "Password";
+            // 
+            // Permission
+            // 
+            this.Permission.HeaderText = "Permission";
+            this.Permission.Name = "Permission";
             // 
             // UpdatePer
             // 
@@ -171,26 +192,6 @@
             this.txtid.Name = "txtid";
             this.txtid.Size = new System.Drawing.Size(36, 20);
             this.txtid.TabIndex = 11;
-            // 
-            // id
-            // 
-            this.id.HeaderText = "Id";
-            this.id.Name = "id";
-            // 
-            // usn
-            // 
-            this.usn.HeaderText = "Username";
-            this.usn.Name = "usn";
-            // 
-            // Password
-            // 
-            this.Password.HeaderText = "Password";
-            this.Password.Name = "Password";
-            // 
-            // Permission
-            // 
-            this.Permission.HeaderText = "Permission";
-            this.Permission.Name = "Permission";
             // 
             // PhanQuyenf
             // 

@@ -241,5 +241,11 @@
   <ItemGroup>
     <None Include="Resources\wall-wallpaper-concrete-colored-painted-textured-concept_53876-31799.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\school-stationery-isolated-blue-background_24837-182.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\equipo-escuela-sobre-fondo-azul_23-2147656034.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

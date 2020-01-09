@@ -58,28 +58,31 @@
             // 
             // button4
             // 
+            this.button4.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button4.Location = new System.Drawing.Point(0, 386);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(800, 64);
             this.button4.TabIndex = 3;
             this.button4.Text = "Thêm Lớp";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button3.Location = new System.Drawing.Point(0, 322);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(800, 64);
             this.button3.TabIndex = 4;
             this.button3.Text = "Thêm Khối Lớp";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // paneladdclass
             // 
+            this.paneladdclass.BackColor = System.Drawing.Color.Transparent;
             this.paneladdclass.Controls.Add(this.mkcombo);
             this.paneladdclass.Controls.Add(this.label6);
             this.paneladdclass.Controls.Add(this.txtss);
@@ -89,7 +92,7 @@
             this.paneladdclass.Controls.Add(this.label3);
             this.paneladdclass.Controls.Add(this.label4);
             this.paneladdclass.Controls.Add(this.button2);
-            this.paneladdclass.Location = new System.Drawing.Point(142, 55);
+            this.paneladdclass.Location = new System.Drawing.Point(139, 52);
             this.paneladdclass.Name = "paneladdclass";
             this.paneladdclass.Size = new System.Drawing.Size(423, 210);
             this.paneladdclass.TabIndex = 1;
@@ -215,6 +218,7 @@
             // 
             // pnaddK
             // 
+            this.pnaddK.BackColor = System.Drawing.Color.Transparent;
             this.pnaddK.Controls.Add(this.txttk);
             this.pnaddK.Controls.Add(this.txtmk);
             this.pnaddK.Controls.Add(this.label2);
@@ -261,6 +265,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::QLy_HocSinh.Properties.Resources.school_stationery_isolated_blue_background_24837_182;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.paneladdclass);
             this.Controls.Add(this.button3);

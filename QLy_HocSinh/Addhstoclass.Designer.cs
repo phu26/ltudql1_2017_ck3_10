@@ -49,12 +49,14 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.BackgroundImage = global::QLy_HocSinh.Properties.Resources.Light_blue_tech_background_vector_05;
             this.groupBox1.Controls.Add(this.panel2);
             this.groupBox1.Controls.Add(this.DShsgridview);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox1.Location = new System.Drawing.Point(0, 53);
+            this.groupBox1.Location = new System.Drawing.Point(0, 84);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(800, 397);
+            this.groupBox1.Size = new System.Drawing.Size(800, 366);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh sách học sinh";
@@ -64,33 +66,38 @@
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(3, 281);
+            this.panel2.Location = new System.Drawing.Point(3, 250);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(794, 113);
             this.panel2.TabIndex = 1;
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button3.Location = new System.Drawing.Point(465, 18);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(203, 92);
             this.button3.TabIndex = 2;
             this.button3.Text = "Xóa học sinh";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button1.Location = new System.Drawing.Point(53, 13);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(238, 92);
             this.button1.TabIndex = 0;
             this.button1.Text = "Thêm vào lớp";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // DShsgridview
             // 
+            this.DShsgridview.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.DShsgridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DShsgridview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.HoTen,
@@ -136,12 +143,12 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.Classcombo);
             this.panel1.Controls.Add(this.KLcombo);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(3, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 50);
+            this.panel1.Size = new System.Drawing.Size(800, 45);
             this.panel1.TabIndex = 1;
             // 
             // Classcombo
@@ -149,7 +156,7 @@
             this.Classcombo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Classcombo.FormattingEnabled = true;
-            this.Classcombo.Location = new System.Drawing.Point(397, 26);
+            this.Classcombo.Location = new System.Drawing.Point(402, 12);
             this.Classcombo.Name = "Classcombo";
             this.Classcombo.Size = new System.Drawing.Size(165, 21);
             this.Classcombo.TabIndex = 1;
@@ -160,7 +167,7 @@
             this.KLcombo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.KLcombo.FormattingEnabled = true;
-            this.KLcombo.Location = new System.Drawing.Point(179, 26);
+            this.KLcombo.Location = new System.Drawing.Point(172, 14);
             this.KLcombo.Name = "KLcombo";
             this.KLcombo.Size = new System.Drawing.Size(164, 21);
             this.KLcombo.TabIndex = 0;
@@ -171,6 +178,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::QLy_HocSinh.Properties.Resources.Light_blue_tech_background_vector_05;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);

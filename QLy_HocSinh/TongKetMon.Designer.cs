@@ -31,19 +31,19 @@
             this.Mamoncombo = new System.Windows.Forms.ComboBox();
             this.HKcombo = new System.Windows.Forms.ComboBox();
             this.BCMgrid = new System.Windows.Forms.DataGridView();
-            this.namhoccombo = new System.Windows.Forms.ComboBox();
             this.MHKbc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaClass = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.subject = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SLD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TLD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.namhoccombo = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.BCMgrid)).BeginInit();
             this.SuspendLayout();
             // 
             // Mamoncombo
             // 
             this.Mamoncombo.FormattingEnabled = true;
-            this.Mamoncombo.Location = new System.Drawing.Point(336, 142);
+            this.Mamoncombo.Location = new System.Drawing.Point(336, 133);
             this.Mamoncombo.Name = "Mamoncombo";
             this.Mamoncombo.Size = new System.Drawing.Size(121, 21);
             this.Mamoncombo.TabIndex = 0;
@@ -52,7 +52,7 @@
             // HKcombo
             // 
             this.HKcombo.FormattingEnabled = true;
-            this.HKcombo.Location = new System.Drawing.Point(336, 84);
+            this.HKcombo.Location = new System.Drawing.Point(336, 95);
             this.HKcombo.Name = "HKcombo";
             this.HKcombo.Size = new System.Drawing.Size(121, 21);
             this.HKcombo.TabIndex = 1;
@@ -67,20 +67,10 @@
             this.subject,
             this.SLD,
             this.TLD});
-            this.BCMgrid.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.BCMgrid.Location = new System.Drawing.Point(0, 169);
+            this.BCMgrid.Location = new System.Drawing.Point(130, 169);
             this.BCMgrid.Name = "BCMgrid";
-            this.BCMgrid.Size = new System.Drawing.Size(800, 281);
+            this.BCMgrid.Size = new System.Drawing.Size(537, 206);
             this.BCMgrid.TabIndex = 2;
-            // 
-            // namhoccombo
-            // 
-            this.namhoccombo.FormattingEnabled = true;
-            this.namhoccombo.Location = new System.Drawing.Point(301, 24);
-            this.namhoccombo.Name = "namhoccombo";
-            this.namhoccombo.Size = new System.Drawing.Size(182, 21);
-            this.namhoccombo.TabIndex = 4;
-            this.namhoccombo.SelectedIndexChanged += new System.EventHandler(this.namhoccombo_SelectedIndexChanged);
             // 
             // MHKbc
             // 
@@ -106,6 +96,15 @@
             // 
             this.TLD.HeaderText = "Tỉ lệ đạt môn";
             this.TLD.Name = "TLD";
+            // 
+            // namhoccombo
+            // 
+            this.namhoccombo.FormattingEnabled = true;
+            this.namhoccombo.Location = new System.Drawing.Point(305, 59);
+            this.namhoccombo.Name = "namhoccombo";
+            this.namhoccombo.Size = new System.Drawing.Size(182, 21);
+            this.namhoccombo.TabIndex = 4;
+            this.namhoccombo.SelectedIndexChanged += new System.EventHandler(this.namhoccombo_SelectedIndexChanged);
             // 
             // TongKetMon
             // 

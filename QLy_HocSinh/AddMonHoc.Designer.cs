@@ -51,6 +51,7 @@
             this.txtnamemh.Name = "txtnamemh";
             this.txtnamemh.Size = new System.Drawing.Size(128, 20);
             this.txtnamemh.TabIndex = 1;
+            this.txtnamemh.Text = "Nhập tên môn học";
             this.txtnamemh.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1

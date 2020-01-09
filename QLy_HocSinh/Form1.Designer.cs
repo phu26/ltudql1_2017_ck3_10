@@ -51,56 +51,73 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button1.Location = new System.Drawing.Point(332, 334);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
             this.button1.Text = "Tiếp nhận";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
+            this.lblName.BackColor = System.Drawing.Color.Transparent;
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblName.Location = new System.Drawing.Point(223, 76);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(43, 13);
+            this.lblName.Size = new System.Drawing.Size(49, 13);
             this.lblName.TabIndex = 1;
             this.lblName.Text = "Họ Tên";
             // 
             // lblAddress
             // 
             this.lblAddress.AutoSize = true;
+            this.lblAddress.BackColor = System.Drawing.Color.Transparent;
+            this.lblAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblAddress.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblAddress.Location = new System.Drawing.Point(29, 79);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(41, 13);
+            this.lblAddress.Size = new System.Drawing.Size(48, 13);
             this.lblAddress.TabIndex = 2;
             this.lblAddress.Text = "Địa Chỉ";
             // 
             // lblmail
             // 
             this.lblmail.AutoSize = true;
+            this.lblmail.BackColor = System.Drawing.Color.Transparent;
+            this.lblmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblmail.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblmail.Location = new System.Drawing.Point(38, 123);
             this.lblmail.Name = "lblmail";
-            this.lblmail.Size = new System.Drawing.Size(32, 13);
+            this.lblmail.Size = new System.Drawing.Size(37, 13);
             this.lblmail.TabIndex = 3;
             this.lblmail.Text = "Email";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label4.Location = new System.Drawing.Point(26, 169);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 13);
+            this.label4.Size = new System.Drawing.Size(65, 13);
             this.label4.TabIndex = 4;
             this.label4.Text = "Ngày Sinh";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label5.Location = new System.Drawing.Point(38, 240);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 13);
+            this.label5.Size = new System.Drawing.Size(60, 13);
             this.label5.TabIndex = 5;
             this.label5.Text = "Giới Tính";
             // 
@@ -127,6 +144,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.txtmail);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.checkgirl);
@@ -201,6 +219,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::QLy_HocSinh.Properties.Resources.equipo_escuela_sobre_fondo_azul_23_2147656034;
             this.ClientSize = new System.Drawing.Size(750, 603);
             this.Controls.Add(this.txtname);
             this.Controls.Add(this.lblName);
