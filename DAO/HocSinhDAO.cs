@@ -603,7 +603,6 @@ namespace DAO
             foreach(var ttk in kkk)
             {
                 string MaLop = ttk.MaLop;
-                string Lop = ttk.MaLop1;
                 string Mahk = ttk.MaHocKi.ToString();
                 int MaHK = int.Parse(Mahk);
                 var q = hdb.KTave(MaLop, MaHK).ToList();
