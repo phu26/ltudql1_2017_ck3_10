@@ -121,8 +121,8 @@
     <Parameter Name="TL" Parameter="tL" Type="System.Double" DbType="Float" />
     <Return Type="System.Int32" />
   </Function>
-  <Function Name="dbo.XoaHS" Method="XoaHS">
-    <Parameter Name="MaHS" Parameter="maHS" Type="System.Int32" DbType="Int" />
+  <Function Name="dbo.XoaMH" Method="XoaMH">
+    <Parameter Name="MaMon" Parameter="maMon" Type="System.String" DbType="VarChar(10)" />
     <Return Type="System.Int32" />
   </Function>
   <Function Name="dbo.AddHK" Method="AddHK">
@@ -296,20 +296,20 @@
     <Parameter Name="per" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
   </Function>
-  <Function Name="dbo.XoaMH" Method="XoaMH">
-    <Parameter Name="MaMon" Parameter="maMon" Type="System.String" DbType="VarChar(10)" />
+  <Function Name="dbo.XoaBD" Method="XoaBD">
+    <Parameter Name="MaHS" Parameter="maHS" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
   </Function>
-  <Function Name="dbo.XoaLH" Method="XoaLH">
-    <Parameter Name="MaLop" Parameter="maLop" Type="System.String" DbType="VarChar(10)" />
+  <Function Name="dbo.XoaHS" Method="XoaHS">
+    <Parameter Name="MaHS" Parameter="maHS" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
   </Function>
   <Function Name="dbo.XoaKL" Method="XoaKL">
     <Parameter Name="MaKL" Parameter="maKL" Type="System.String" DbType="VarChar(10)" />
     <Return Type="System.Int32" />
   </Function>
-  <Function Name="dbo.XoaBD" Method="XoaBD">
-    <Parameter Name="MaHS" Parameter="maHS" Type="System.Int32" DbType="Int" />
+  <Function Name="dbo.XoaLH" Method="XoaLH">
+    <Parameter Name="MaLop" Parameter="maLop" Type="System.String" DbType="VarChar(10)" />
     <Return Type="System.Int32" />
   </Function>
 </Database>

@@ -184,10 +184,10 @@ namespace DAO
 			return ((int)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.XoaHS")]
-		public int XoaHS([global::System.Data.Linq.Mapping.ParameterAttribute(Name="MaHS", DbType="Int")] System.Nullable<int> maHS)
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.XoaMH")]
+		public int XoaMH([global::System.Data.Linq.Mapping.ParameterAttribute(Name="MaMon", DbType="VarChar(10)")] string maMon)
 		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), maHS);
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), maMon);
 			return ((int)(result.ReturnValue));
 		}
 		
@@ -338,17 +338,17 @@ namespace DAO
 			return ((int)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.XoaMH")]
-		public int XoaMH([global::System.Data.Linq.Mapping.ParameterAttribute(Name="MaMon", DbType="VarChar(10)")] string maMon)
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.XoaBD")]
+		public int XoaBD([global::System.Data.Linq.Mapping.ParameterAttribute(Name="MaHS", DbType="Int")] System.Nullable<int> maHS)
 		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), maMon);
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), maHS);
 			return ((int)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.XoaLH")]
-		public int XoaLH([global::System.Data.Linq.Mapping.ParameterAttribute(Name="MaLop", DbType="VarChar(10)")] string maLop)
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.XoaHS")]
+		public int XoaHS([global::System.Data.Linq.Mapping.ParameterAttribute(Name="MaHS", DbType="Int")] System.Nullable<int> maHS)
 		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), maLop);
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), maHS);
 			return ((int)(result.ReturnValue));
 		}
 		
@@ -359,10 +359,10 @@ namespace DAO
 			return ((int)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.XoaBD")]
-		public int XoaBD([global::System.Data.Linq.Mapping.ParameterAttribute(Name="MaHS", DbType="Int")] System.Nullable<int> maHS)
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.XoaLH")]
+		public int XoaLH([global::System.Data.Linq.Mapping.ParameterAttribute(Name="MaLop", DbType="VarChar(10)")] string maLop)
 		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), maHS);
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), maLop);
 			return ((int)(result.ReturnValue));
 		}
 	}

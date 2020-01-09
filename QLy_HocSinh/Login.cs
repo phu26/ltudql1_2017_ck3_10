@@ -47,6 +47,7 @@ namespace QLy_HocSinh
         }
 
         private void button1_Click(object sender, EventArgs e)
+        
         {
             int kt = 0;
             if(textBox1.Text != "UserName" && textBox2.Text!= "PassWord")

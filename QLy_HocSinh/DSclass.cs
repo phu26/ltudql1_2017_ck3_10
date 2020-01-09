@@ -718,23 +718,53 @@ namespace QLy_HocSinh
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if(classcombo.SelectedItem.ToString() == null)
+            if(classcombo.SelectedItem != null )
             {
-               foreach(var s in ClassDTO.khoilop)
+                MessageBox.Show("Chỉ được xóa những khối lớp không có lớp ");
+               
+            }
+            else
+            {
+                foreach (var s in ClassDTO.khoilop)
                 {
-                    if(s.TenK1 == classcombo.SelectedItem.ToString())
+                    if (s.TenK1 == kLcombo.SelectedItem.ToString())
                     {
                         HSB.DelKL(s.MaK1);
-                        DSclass_Load(sender, e);
+                        HSB.Load();
+                        HSB.loadBCM();
                         MessageBox.Show("successful");
                         break;
                     }
                 }
             }
-            else
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            List<int> hs = new List<int>();
+            HSB.Loadhsl(classcombo.SelectedItem.ToString());
+            if(HocSinhDTO.lisths.Count>0)
             {
-                MessageBox.Show("Chỉ được xóa những khối lớp không có lớp ");
+                foreach (var x in HocSinhDTO.lisths)
+                {
+                    HSB.GetMaHS(x.Email);
+                    HSB.DelBD(HocSinhDTO.id);
+                }
             }
+           
+            foreach (var s in clasDTO.lop)
+            {
+                if (s.TenL1 == classcombo.SelectedItem.ToString())
+                {
+                    HSB.DelClass(s.MaL1);
+                    HSB.Load();
+                    HSB.loadBCM();
+                    MessageBox.Show("successful");
+                    break;
+                }
+            }
+
+
         }
     }
 }
