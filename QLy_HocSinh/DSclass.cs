@@ -715,5 +715,26 @@ namespace QLy_HocSinh
                 MessageBox.Show("vui lòng chọn môn cần cập nhật");
             }
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if(classcombo.SelectedItem.ToString() == null)
+            {
+               foreach(var s in ClassDTO.khoilop)
+                {
+                    if(s.TenK1 == classcombo.SelectedItem.ToString())
+                    {
+                        HSB.DelKL(s.MaK1);
+                        DSclass_Load(sender, e);
+                        MessageBox.Show("successful");
+                        break;
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Chỉ được xóa những khối lớp không có lớp ");
+            }
+        }
     }
 }

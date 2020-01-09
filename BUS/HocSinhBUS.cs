@@ -173,6 +173,19 @@ namespace BUS
         {
             HS.DeleteMH(MaMH);
         }
+        public void DelKL(string MaKL)
+        {
+            HS.DeleteKL(MaKL);
+        }
+        public void DelClass(string MaLop)
+        {
+            HS.DeleteClass(MaLop);
+        }
+        public void DelBD(int MaHS)
+        {
+            HS.DeleteHS(MaHS);
+        }
+
     }
 
 }
