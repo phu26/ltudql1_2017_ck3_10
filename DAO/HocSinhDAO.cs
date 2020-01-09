@@ -640,10 +640,13 @@ namespace DAO
                     }
 
                 }
-
-                float TL = (100 * dem) / dem2;
-                string x = MaHK + MaLop;
-                hdb.addBCHK(x, MaHK, MaLop, dem, TL);
+                if(dem2>0)
+                {
+                    float TL = (100 * dem) / dem2;
+                    string x = MaHK + MaLop;
+                    hdb.addBCHK(x, MaHK, MaLop, dem, TL);
+                }
+                
 
             }
 
