@@ -142,5 +142,28 @@ namespace QLy_HocSinh
             }
             
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            DataGridViewRow row = DShsgridview.SelectedRows[0];
+            string mail = row.Cells[4].Value.ToString();
+            HSB.GetMaHS(mail);
+            int x = HocSinhDTO.id;
+            DialogResult result = MessageBox.Show("Đồng Ý Sẽ Không Khôi Phục Được", "Xóa Học Sinh", MessageBoxButtons.YesNo, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button2);
+            switch (result)
+            {
+                case DialogResult.Abort:
+                    break;
+                case DialogResult.Yes:
+                    {
+                        HSB.DeleteHS(x);
+                        MessageBox.Show("Successful");
+                        HSB.Load();
+                        break;
+                    }
+                default:
+                    break;
+            }
+        }
     }
 }
