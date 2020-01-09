@@ -13,6 +13,9 @@ namespace DTO
         public static bool TonTai;
         private string MaK;
         private string TenK;
+        public static bool KhongTonTai;
+        private string Check;
+        private string NonCheck;
 
         public ClassDTO(string x, string y)
         {
