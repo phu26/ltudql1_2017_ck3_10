@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.DShsgridview = new System.Windows.Forms.DataGridView();
-            this.KLcombo = new System.Windows.Forms.ComboBox();
-            this.Classcombo = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.DShsgridview = new System.Windows.Forms.DataGridView();
             this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Sex = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Emailcl = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.Classcombo = new System.Windows.Forms.ComboBox();
+            this.KLcombo = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DShsgridview)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DShsgridview)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -59,15 +59,35 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh sách học sinh";
             // 
-            // panel1
+            // panel2
             // 
-            this.panel1.Controls.Add(this.Classcombo);
-            this.panel1.Controls.Add(this.KLcombo);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 50);
-            this.panel1.TabIndex = 1;
+            this.panel2.Controls.Add(this.button3);
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(3, 281);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(794, 113);
+            this.panel2.TabIndex = 1;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(465, 18);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(203, 92);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Xóa học sinh";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(53, 13);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(238, 92);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Thêm vào lớp";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // DShsgridview
             // 
@@ -84,58 +104,6 @@
             this.DShsgridview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DShsgridview.Size = new System.Drawing.Size(794, 223);
             this.DShsgridview.TabIndex = 0;
-            // 
-            // KLcombo
-            // 
-            this.KLcombo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.KLcombo.FormattingEnabled = true;
-            this.KLcombo.Location = new System.Drawing.Point(179, 26);
-            this.KLcombo.Name = "KLcombo";
-            this.KLcombo.Size = new System.Drawing.Size(164, 21);
-            this.KLcombo.TabIndex = 0;
-            this.KLcombo.Text = "     Chọn khối lớp";
-            this.KLcombo.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // Classcombo
-            // 
-            this.Classcombo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Classcombo.FormattingEnabled = true;
-            this.Classcombo.Location = new System.Drawing.Point(397, 26);
-            this.Classcombo.Name = "Classcombo";
-            this.Classcombo.Size = new System.Drawing.Size(165, 21);
-            this.Classcombo.TabIndex = 1;
-            this.Classcombo.Text = "      Chọn Lớp";
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(3, 281);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(794, 113);
-            this.panel2.TabIndex = 1;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(53, 13);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(238, 92);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Thêm vào lớp";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(465, 18);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(203, 92);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Xóa học sinh";
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // HoTen
             // 
@@ -166,6 +134,39 @@
             this.Emailcl.Name = "Emailcl";
             this.Emailcl.Width = 150;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.Classcombo);
+            this.panel1.Controls.Add(this.KLcombo);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(800, 50);
+            this.panel1.TabIndex = 1;
+            // 
+            // Classcombo
+            // 
+            this.Classcombo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Classcombo.FormattingEnabled = true;
+            this.Classcombo.Location = new System.Drawing.Point(397, 26);
+            this.Classcombo.Name = "Classcombo";
+            this.Classcombo.Size = new System.Drawing.Size(165, 21);
+            this.Classcombo.TabIndex = 1;
+            this.Classcombo.Text = "      Chọn Lớp";
+            // 
+            // KLcombo
+            // 
+            this.KLcombo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.KLcombo.FormattingEnabled = true;
+            this.KLcombo.Location = new System.Drawing.Point(179, 26);
+            this.KLcombo.Name = "KLcombo";
+            this.KLcombo.Size = new System.Drawing.Size(164, 21);
+            this.KLcombo.TabIndex = 0;
+            this.KLcombo.Text = "     Chọn khối lớp";
+            this.KLcombo.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // Addhstoclass
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -178,9 +179,9 @@
             this.Text = "Addhstoclass";
             this.Load += new System.EventHandler(this.Addhstoclass_Load);
             this.groupBox1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.DShsgridview)).EndInit();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DShsgridview)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
